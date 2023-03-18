@@ -1,0 +1,14 @@
+anguage: go
+
+go:
+  - 1.5
+  - 1.6
+  - 1.7
+  - 1.8
+  - 1.9
+
+install:
+  - go get ./...
+
+before_script:
+  - find . -name "check_test.go" | xargs rm # exclude solutions checks
